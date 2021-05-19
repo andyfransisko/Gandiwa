@@ -1,0 +1,124 @@
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.form-title {
+  grid-row: 3;
+  grid-column: 5/9;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.form-bg {
+  grid-row: 4/8;
+  grid-column: 3/11;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+}
+
+.form-bg1 {
+  grid-row: 8/10;
+  grid-column: 1/13;
+}
+
+.form-input {
+  grid-row: 5;
+  grid-column: 4/10;
+}
+
+.form-submit {
+  grid-row: 6;
+  grid-column: 8/10;
+  justify-self: end;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.form-container h1 {
+  color: var(--primary-color);
+  font-size: 36px;
+}
+
+.form-container hr {
+  border: 1px solid var(--white-color);
+  margin: 20px 0 20px 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .form-bg {
+    grid-column: 2/12;
+  }
+
+  .form-title {
+    grid-column: 4/10;
+  }
+
+  .form-input {
+    grid-column: 3/11;
+  }
+
+  .form-submit {
+    grid-column: 8/11;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .form-bg {
+    grid-column: 2/12;
+  }
+
+  .form-title {
+    grid-column: 4/10;
+  }
+
+  .form-input {
+    grid-column: 3/11;
+  }
+
+  .form-submit {
+    grid-column: 8/11;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .form-bg {
+    grid-column: 2/12;
+  }
+
+  .form-title {
+    grid-column: 5/9;
+  }
+
+  .form-input {
+    grid-column: 4/10;
+  }
+
+  .form-submit {
+    grid-column: 8/10;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .form-bg {
+    grid-column: 3/11;
+  }
+
+  .form-title {
+    grid-column: 5/9;
+  }
+
+  .form-input {
+    grid-column: 4/10;
+  }
+
+  .form-submit {
+    grid-column: 8/10;
+  }
+}

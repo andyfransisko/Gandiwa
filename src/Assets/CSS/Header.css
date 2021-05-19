@@ -1,0 +1,268 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  text-align: right;
+  z-index: 100;
+}
+
+ul {
+  /*border: 2px solid white;*/
+  list-style-type: none;
+  margin: 5px 100px 0px 0px;
+  padding-top: 0px;
+  background-color: transparent;
+}
+
+li {
+  color: var(--primary-color);
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Rockwell";
+  font-weight: 1;
+}
+
+/* Navbar Logo */
+.small-img-size {
+  width: 150px;
+  padding-top: 10px;
+}
+
+.flag-img-size {
+  width: 20px;
+}
+
+.desktop {
+  display: inline;
+}
+
+.desktop-mobile {
+  display: inline;
+}
+
+.mobile {
+  display: none;
+}
+
+.menu-size {
+  font-size: 28px;
+  position: relative;
+  top: 18px;
+}
+
+.menu-size:hover {
+  color: var(--second-color);
+}
+
+.navbar-position {
+  position: relative;
+  top: 18px;
+}
+
+.underlined-effect {
+  padding-bottom: 25px;
+  border-bottom: 2px solid transparent;
+}
+
+.underlined-effect:hover {
+  border-bottom: 2px solid var(--primary-color);
+  transition: 1.2s;
+}
+
+.menu-container {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: #262626;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  -webkit-box-shadow: 9px 13px 23px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 23px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 23px -5px rgba(0, 0, 0, 0.75);
+}
+
+.menu-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+  transition: 0.3s ease-in-out;
+  font-family: "Rockwell";
+  font-weight: 1;
+}
+
+.menu-content-logo {
+  grid-column: 2/6;
+  grid-row: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+.header-img-width {
+  width: 130px;
+}
+
+.menu-content-close {
+  grid-column: 7;
+  grid-row: 2;
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+  justify-self: end;
+  align-items: center;
+}
+
+.menu-content-close:hover {
+  color: var(--second-color);
+}
+
+.menu-content-font {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-content-font:hover {
+  color: var(--second-color);
+}
+
+.menu-content-list1 {
+  grid-column: 2/8;
+  grid-row: 6;
+  align-items: center;
+  justify-self: center;
+}
+
+.menu-content-list2 {
+  grid-column: 2/8;
+  grid-row: 8;
+  align-items: center;
+  justify-self: center;
+}
+
+.menu-content-list3 {
+  grid-column: 2/8;
+  grid-row: 10;
+  align-items: center;
+  justify-self: center;
+}
+
+.menu-content-list4 {
+  grid-column: 2/8;
+  grid-row: 12;
+  align-items: center;
+  justify-self: center;
+}
+
+.menu-content-list5 {
+  grid-column: 2/8;
+  grid-row: 15;
+  align-items: center;
+  justify-self: center;
+}
+
+.menu-container .fa-facebook-f,
+.fa-instagram,
+.fa-linkedin {
+  font-size: 18px;
+}
+
+.fa-facebook-f:hover {
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+.fa-instagram:hover {
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+.fa-linkedin:hover {
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  ul {
+    margin: 5px 60px 0px 0px;
+  }
+
+  li {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  ul {
+    margin: 5px 60px 0px 0px;
+  }
+
+  li {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .desktop {
+    display: inline;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  ul {
+    margin: 5px 50px 0px 0px;
+  }
+
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .desktop {
+    display: inline;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  ul {
+    margin: 5px 200px 0px 0px;
+  }
+
+  li {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

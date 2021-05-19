@@ -1,0 +1,140 @@
+.home-third-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.home-third-background {
+  grid-column: 1/11;
+  grid-row: 3/15;
+  background-image: url("../../Images/BG2-abdi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-third-pic-1 {
+  grid-column: 2/6;
+  grid-row: 5/14;
+  border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 0px 42px -12px rgba(99, 235, 228, 1);
+  -moz-box-shadow: 0px 0px 42px -12px rgba(99, 235, 228, 1);
+  box-shadow: 0px 0px 42px -12px rgba(99, 235, 228, 1);
+}
+
+.home-third-header {
+  grid-column: 6/9;
+  grid-row: 6/14;
+  align-self: start;
+  justify-self: left;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.word-space {
+  word-spacing: 5px;
+}
+
+.home-third-container h2 {
+  font-size: 32px;
+  color: var(--white-color);
+  margin-block-end: 0;
+  font-family: "Rockwell";
+  font-weight: normal;
+}
+
+.home-third-container h3 {
+  font-size: 20px;
+  color: var(--white-color);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home-third-background {
+    grid-column: 1/11;
+    grid-row: 1/13;
+  }
+
+  .home-third-pic-1 {
+    grid-column: 2/10;
+    grid-row: 4/12;
+  }
+
+  .home-third-header {
+    grid-column: 2/10;
+    grid-row: 12;
+    align-self: start;
+    justify-self: center;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .home-third-background {
+    grid-column: 1/11;
+    grid-row: 1/13;
+  }
+
+  .home-third-pic-1 {
+    grid-column: 2/10;
+    grid-row: 4/12;
+  }
+
+  .home-third-header {
+    grid-column: 2/10;
+    grid-row: 12;
+    align-self: start;
+    justify-self: center;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .home-third-background {
+    grid-column: 1/11;
+    grid-row: 1/13;
+  }
+
+  .home-third-pic-1 {
+    grid-column: 3/9;
+    grid-row: 4/12;
+  }
+
+  .home-third-header {
+    grid-column: 2/10;
+    grid-row: 12;
+    align-self: start;
+    justify-self: center;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home-third-background {
+    grid-column: 1/11;
+    grid-row: 3/15;
+  }
+
+  .home-third-pic-1 {
+    grid-column: 2/6;
+    grid-row: 5/14;
+  }
+
+  .home-third-header {
+    grid-column: 6/9;
+    grid-row: 6/14;
+    align-self: start;
+    justify-self: left;
+    padding-left: 40px;
+    text-align: left;
+  }
+}
